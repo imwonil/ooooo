@@ -44,7 +44,7 @@ static #adminSet = {  kindSet :[], wonset:[]  }
     }).catch((err) => console.error(err))
   } 
 
-  static getUserInfo(id) {
+  static getUserInfo(id) {ccs
       
   return fs.
   readFile("./src/database/users.json")
@@ -56,7 +56,7 @@ static #adminSet = {  kindSet :[], wonset:[]  }
     const keys = Object.keys(users)
     const newUsers = keys.reduce((newUsers, filde ) =>{
     newUsers[filde] = users[filde][idx]
-    return newUsers;
+    return newUsers; 
     },{})
     return newUsers;
   }) 

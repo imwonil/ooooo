@@ -21,7 +21,7 @@ const fs =  require('fs').promises
 fs. readFile("./src/database/kokoTime.json")
 .then((data) => {
 const a = JSON.parse(data)
-
+co
 router.get('/kokoTime', (req,res) =>{
 res.send(a) 
 })
